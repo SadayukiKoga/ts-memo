@@ -1,0 +1,10 @@
+.root {
+  margin: 2rem 0;
+  padding: 0;
+}
+.root > *:first-child {
+  margin-top: 0;
+}
+.root > *:last-child {
+  margin-bottom: 0;
+}

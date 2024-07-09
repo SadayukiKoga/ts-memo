@@ -1,0 +1,3 @@
+.textarea {
+  min-height: calc(8em * var(--line-height-normal));
+}

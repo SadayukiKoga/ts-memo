@@ -1,0 +1,26 @@
+.root {
+  margin: 2rem 0;
+  background-color: rgb(var(--theme-gray-surface));
+  border-radius: var(--radius-panel);
+}
+.root > *:first-child {
+  margin-top: 0;
+}
+.root > *:last-child {
+  margin-bottom: 0;
+}
+.body {
+  padding: 2rem;
+}
+.body > *:first-child {
+  margin-top: 0;
+}
+.body > *:last-child {
+  margin-bottom: 0;
+}
+.heading {
+  font-size: 1.5rem;
+}
+.primary {
+  background-color: rgb(var(--theme-primary-surface));
+}

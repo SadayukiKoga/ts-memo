@@ -1,0 +1,29 @@
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  padding: 0 1.5rem;
+  background-color: rgb(var(--theme-primary));
+}
+.logo {
+  color: rgb(var(--theme-contrast));
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*----- Main components -----*/
+.main {
+  max-width: var(--width-content);
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+.main > *:first-child {
+  margin-top: 0;
+}
+.main > *:last-child {
+  margin-bottom: 0;
+}

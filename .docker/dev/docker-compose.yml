@@ -1,0 +1,18 @@
+version: '3'
+services:
+  node:
+    build:
+      context: ../..
+      dockerfile: ./.docker/images/node/Dockerfile.dev
+      args:
+        - HOST_UID=${HOST_UID}
+        - HOST_GID=${HOST_GID}
+    tty: true
+    volumes:
+      - ../..:/var/www
+    env_file:
+      - .env.development
+    ports:
+      - 3000:3000
+      - 8000:8000
+      - 5555:5555

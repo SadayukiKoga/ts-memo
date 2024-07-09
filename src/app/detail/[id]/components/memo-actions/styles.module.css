@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}

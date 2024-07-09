@@ -1,0 +1,21 @@
+FROM node:18.16.0-bullseye-slim
+
+ARG HOST_UID
+ARG HOST_GID
+
+ENV HOST_UID=${HOST_UID}
+ENV HOST_GID=${HOST_GID}
+
+RUN apt-get update \
+    && apt-get install -y vim build-essential python3 python3-pip tcpdump netcat iproute2 procps
+
+COPY ./.docker/images/node/useradd.sh /usr/local/bin/useradd.sh
+RUN chmod +x /usr/local/bin/useradd.sh && /usr/local/bin/useradd.sh \
+    && mkdir -p /var/www \
+    && chown nodeuser:nodeuser /var/www
+
+USER nodeuser
+
+WORKDIR /var/www
+
+COPY . .

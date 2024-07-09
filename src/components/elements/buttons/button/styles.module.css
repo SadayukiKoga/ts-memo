@@ -1,0 +1,43 @@
+.root {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: rgb(var(--theme-foreground));
+  border: 1px solid rgb(var(--theme-foreground));
+  border-radius: var(--radius-button);
+  color: rgb(var(--theme-contrast));
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color var(--transition-ease),
+    border-color var(--transition-ease);
+}
+.root:hover {
+  background-color: rgba(var(--theme-foreground), 0.7);
+  border-color: rgba(var(--theme-foreground), 0.7);
+  text-decoration: none;
+}
+.primary {
+  background-color: rgb(var(--theme-primary));
+  border-color: rgb(var(--theme-primary));
+}
+.primary:hover {
+  background-color: rgba(var(--theme-primary), 0.7);
+  border-color: rgba(var(--theme-primary), 0.7);
+}
+.secondary {
+  background-color: rgb(var(--theme-secondary));
+  border-color: rgb(var(--theme-secondary));
+}
+.secondary:hover {
+  background-color: rgba(var(--theme-secondary), 0.7);
+  border-color: rgba(var(--theme-secondary), 0.7);
+}
+.small {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.large {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+}

@@ -1,0 +1,13 @@
+.field {
+  margin: 1rem 0;
+}
+.field > *:first-child {
+  margin-top: 0;
+}
+.field > *:last-child {
+  margin-bottom: 0;
+}
+.label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}

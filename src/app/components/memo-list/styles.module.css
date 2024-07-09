@@ -1,0 +1,33 @@
+.root {
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+}
+.memo {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: 1px solid rgb(var(--theme-gray));
+}
+.body {
+  flex: 1;
+}
+.sub {
+  display: flex;
+  gap: 1rem;
+}
+.datetime {
+  color: rgb(var(--theme-gray));
+  font-size: 0.875rem;
+}
+.name {
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}

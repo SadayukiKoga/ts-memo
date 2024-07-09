@@ -1,0 +1,14 @@
+.root {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background-color: rgb(var(--theme-gray-surface));
+  border-radius: var(--radius-alert);
+}
+.success {
+  background-color: rgb(var(--theme-success-surface));
+  color: rgb(var(--theme-success-dark));
+}
+.error {
+  background-color: rgb(var(--theme-error-surface));
+  color: rgb(var(--theme-error-dark));
+}

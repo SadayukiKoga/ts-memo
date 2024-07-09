@@ -1,0 +1,9 @@
+.root {
+  max-width: 640px;
+}
+.root > *:first-child {
+  margin-top: 0;
+}
+.root > *:last-child {
+  margin-bottom: 0;
+}
