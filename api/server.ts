@@ -40,6 +40,26 @@ app.get('/memos', async (req, res) => {
   res.json({ data: memos });
 });
 
+app.post('/memos/create', async (req, res) => {
+  const { title, content } = req.body;
+  console.log(title);
+
+  if (typeof title !== 'string' || !title) {
+    res.status(400).json({ error: { message: 'タイトルまたは内容が未入力です' } });
+    return;
+  }
+
+  if (typeof content !== 'string' || !content) {
+    res.status(400).json({ error: { message: 'タイトルまたは内容が未入力です' } });
+    return;
+  }
+
+  const record = await prisma.memo.create({ data: { title, content } });
+
+  res.json({ data: { id: record.id.toString(10) } });
+});
+
+
 const formatDateInJa = (date: Date) => {
   const year = date.getFullYear().toString();
   const month = (date.getMonth() + 1).toString().padStart(2, '0');
